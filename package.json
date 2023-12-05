@@ -52,6 +52,9 @@
     "lint": "eslint src --ext ts",
     "prepare": "husky install",
     "test": "jest --silent",
-    "tsc": "tsc --noemit --project ./tsconfig.tsc.json"
+    "tsc": "tsc --noemit --project ./tsconfig.tsc.json",
+    "verdaccio:unpublish": "npm unpublish --force --registry http://localhost:4873/",
+    "verdaccio:publish": "npm publish --registry http://localhost:4873/",
+    "publish:local": "npm run build && npm run verdaccio:unpublish && npm run verdaccio:publish"
   }
 }
