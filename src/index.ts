@@ -4,5 +4,6 @@ export * from './entries';
 export * from './getOptionalArrayValue';
 export * from './joinWithoutEmtpy';
 export * from './omit';
+export * from './omitEmpty';
 export * from './pick';
 export * from './toObjectById';
